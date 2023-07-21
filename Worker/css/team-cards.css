@@ -1,0 +1,53 @@
+:root
+{
+    --border: darkcyan;
+    --main-color:#1E214E;
+
+}
+body{ background: #1E214E;}
+.main-obj
+{
+background: #1E214E; 
+display:flex;
+align-items: center;
+flex-wrap:wrap ;
+justify-content:center;
+cursor: auto;
+
+}
+.st-p
+{
+    display:flex;
+    align-content: center;
+    justify-content: bet-around;
+}
+.member 
+{
+    background: #eee;
+    display: grid;
+    min-width: 300px;
+    min-height: 300px;   
+    margin-bottom: 30px;
+    margin: 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    justify-content: center;
+    box-shadow: 0 0 20px 0px rgba(9, 93, 239, 0.633);
+    transition: transform 0.5s;
+}
+.profile
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px ;
+    justify-content: center;
+}
+h2
+{
+    color: #eee;
+    display: grid;
+    margin: 20px ;
+    justify-content: center;
+    font-size: 50px;
+}

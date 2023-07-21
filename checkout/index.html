@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ACM" content="ACM a market where you can find what do you need, Clothes, Accesories & Devices ">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/acm.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+</head>
+<body>
+    
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="checkout.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+  
+  <!-- ---------------------------------NAV---------------------------------- -->
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
+  <nav class="navbar navbar-expand-lg sticky-top p-lg-0 ">
+    <!-- <div class="container-fluid"> -->
+    <div class="container">  
+      <a class="navbar-brand" href="#"><img style="height: 45px; width: auto;" src="../media/logo-removebg-preview.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="../HOME.html">Home</a>
+          </li>
+          <!-- <li class="nav-item"> -->
+            <!-- <a class="nav-link  p-2 p-lg-3" href="#">Services</a> -->
+          </li>
+          <li class="nav-item">     
+            <a class="nav-link p-2 p-lg-3" href="../html/about us.html">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link  p-2 p-lg-3" href="#">Language</a>      -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-2 p-lg-3" href="index.html">Checkout</a>
+          </li>
+          <!-- <li class="nav-item"> -->
+            <!-- <a class="nav-link p-2 p-lg-3" href="#">Contact</a> -->
+            <li class="nav-item dropdown  ">
+            <a class="nav-link dropdown-toggle  p-2 p-lg-3" href="#" data-bs-toggle="dropdown" aria-expanded="false">prodcuts</a>
+            <ul class="dropdown-menu  p-3 mb-0 ">
+              <!-- -------------------------------------------------------- -->
+              <a class="dropdown-item   rounded-pill main-btn nav-link "style="color:brown;"  href="../Products/Accesories & Devices/index.html">Accessories</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link " href="../Products/Accesories & Devices/html/rengs.html">Rings</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link" href="../Products/Accesories & Devices/html/watches.html">Watches</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link  " href="../Products/Accesories & Devices/html/sets .html">Nacklace</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link "style="color:brown;" href="../Products/Clothes/clothes-home.html">Clothes</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link " href="../Products/Clothes/html/clothes-shoes.html">Shose</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link " href="../Products/Clothes/html/clothes-girl.html">Girls</a>
+              <a class="dropdown-item   rounded-pill main-btn  nav-link" href="../Products/Clothes/html/clothes-children.html">Chaildern</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link" href="../Products/Clothes/html/clothes-women.html">Wemen</a>
+              <a class="dropdown-item   rounded-pill main-btn nav-link" href="../Products/Clothes/html/clothes-man.html">Men</a><br>             
+                            <!-- <a  class= "primary-btn btn  rounded-pill main-btn"  href="html/contact.html">Sign in </a> -->
+
+
+               
+              <!-- <li><a class="dropdown-item   rounded-pill main-btn " href="#">------</a></li> -->
+              <!-- <li><a class="dropdown-item  color-dark rounded-pill main-btn " href="#">------</a></li> -->
+
+            </ul>
+          </li>
+          </li>                         
+            </ul>
+            <div>
+            
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <br>
+            
+          
+            <div class="search ps-3 pe-3  d-none d-lg-block  ">
+           
+            
+              <li>
+                <i class="fa-solid fa-magnifying-glass br"></i></li>
+            </div>
+            <a  class= "primary-btn btn  rounded-pill main-btn"  href="../html/contact.html">Contact </a>
+      </div>
+    </div>
+  </nav>
+
+  <!------------------------------------------- end nav  -------------------------------->      
+
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Checkout form</h2>
+      <p class="lead">"We in <strong><u>A C M</u></strong>  payment department always strive to exceed our customers' expectations.
+        We work hard to update and develop our systems and technologies to meet the needs of our customers and exceed their expectations.
+         We guarantee accuracy and speed of processing payments, as well as providing convenient and secure payment options that suit the needs of each customer. We are always ready to provide support and assistance to customers in case they face any difficulties in the payment process.
+      </p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">−$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Save this information for next time</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+         <button class="w-100 btn btn-primary btn-lg" type="submit"> <a href="index.html"  style="color: aliceblue; text-decoration: none;">Continue to checkout</a></button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+  <!-- ----------------------------- End of you page -------------------------------------------- -->
+   <br><br><br><br>
+    <!-----------------------  start footer  ------------------------------------>
+  <div>
+    <div class ="footer">
+      <!-- <div class="container"> -->
+          
+          <div  class="row  justify-content-center  ">
+            <div class="footer-col-1 center-sm text-center">
+              <img style="height: 100px; width: auto;" src="../media/logo-removebg-preview.png">
+              <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of  our sells Accessible to the Many.</p>
+          </div>
+              <div class="footer-col-2 ">
+                  <h3><a></a>Company</h3>
+                  <ul>
+                      <li> About us</li>
+                      <li> Our Servises</li>
+                      <li>  Privacy policy</li>
+                      <li>Affilate program</li>
+                  </ul>
+              
+              </div>
+              
+              <div class="footer-col-3  ">
+                  <h3>Get help</h3>
+                 <ul>
+                     <li> FAQ</li>
+                     <li>shopping</li>
+                     <li>Order Status</li>
+                     <li>Payment options</li>
+                  </ul>
+              </div>
+              <div class="footer-col-4  ">
+                  <h3>Online shop</h3>
+                 <ul>
+                     <li>Watches</li>
+                     <li>clothes</li>
+                     <li>Bags</li>
+                     <li>Bootes</li>
+                  </ul>
+              </div>
+              
+          </div>
+          
+          <hr><!--horizontal line-->
+  
+          <div style=" display:flex;justify-content: space-between;">
+            <p style="width:50%" class="copyright">Copyright&copy;2023 - ACM STORE</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <!-- <ul class="link-group"  style="list-style:none none;display:flex;justify-content:right" >
+                <li style="margin-left:5px"><i style="font-size: 20px;" class="fa-brands fa-facebook"></i></li>
+                <li style="margin-left:5px"><i style="font-size: 20px;" class="fa-brands fa-whatsapp"></i></li>
+                <li style="margin-left:5px"><i style="font-size: 20px;" class="fa-brands fa-twitter"></i></li>
+                <li style="margin-left:5px"><i style="font-size: 20px;" class="fa-brands fa-instagram"></i></li>
+            </ul> -->
+          </div>
+        </ul>
+    </div>
+  </div>
+    </div>
+      <!--------------------  End footer --------------------------------->
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/contect.js"></script>
+
+      <script src="checkout.js"></script>
+  </body>
+</html>

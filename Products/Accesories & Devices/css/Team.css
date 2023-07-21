@@ -1,0 +1,10 @@
+:root
+{
+    --border: darkcyan;
+    --main-color:#1E214E;
+
+}
+.obj
+{
+display: grid;
+}

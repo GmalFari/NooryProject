@@ -1,0 +1,98 @@
+/* Created by Noory */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.containers {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(214, 220, 224, 0.897);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.description {
+  background-color:  #1e214e;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  background: linear-gradient(135deg, transparent 20%, #20ebd7);
+  border-radius: 50%;
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -20px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+form {
+  padding: 25px;
+  position: relative;
+}
+.title {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin:25px;
+  text-align: center;
+}
+.contact-info {
+  padding: 25px;
+  position: relative;
+  margin: auto;
+}
+.contact-info .title {
+  color: #131214 ;
+}
+.text {
+  color: #ffffff;
+  margin: 25px;  
+}
+.big-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 80px solid #1e214e;
+  border-radius: 50%;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-40%, 38%);
+}
+
+
+
+
+
+

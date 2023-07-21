@@ -1,0 +1,148 @@
+
+:root {
+    --white-color:#dedfe2;
+    --blue-color:#0d6efd;
+    --green-color:#3de1b0;
+    --black-color:#090402;
+    --browen-color:#ec4b0c;
+    --main-color:#1E214E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.containt{
+    height: 1000px;
+
+}
+.footer{
+    background:var(--main-color); /*black;*/
+    color: #8a8a8a;
+    font-size: 14px;
+    padding:60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;   
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #596c95,#1D2033);
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.4s;
+  }
+  
+  form 
+  .social-icons a:hover {
+    transform: scale(1.09);
+  }
+  
+
+
+
+
+/*-----------------------media query for menu -----------------------*/
+/* @media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top:70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{ 
+        display:block;
+        cursor: pointer;
+    } */
+/* } */
+
+/*-----------------------media query for less than 600 screen size(mobile device) -----------------------*/
+/* @media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2 .col-3 .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    } */
